@@ -1,0 +1,114 @@
+@media screen and (min-width: 55rem) {
+    body{
+        margin: auto;
+    }
+    header{
+        font-size: 1.5rem;
+    }
+    
+    #menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul.navigation, ul.navigation.open{
+        display: flex;       
+    }
+
+    ul.navigation li{
+        margin: 0 20px;
+        border: none;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-weight: 700;  
+        font-size: 1.2rem;
+    }
+    .hero-message{
+        position:relative;
+        top: 50px;
+        width: 30%;
+        margin-left: 35px;
+        font-size: 1.5rem;
+        background-color: #0D3B66;
+        color: #F4D35E;
+        font-size:35px;
+        text-align: center;
+        opacity: 0.9;
+        border-radius: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 15px;
+    }
+
+
+
+    .slide-card img{
+        width: 80%;
+        height: auto; 
+        border-radius: 5px;
+        margin-top: 1rem; 
+    }
+    .slide-card>.text{
+        font-size: 2.5rem; 
+    }
+
+    
+
+section {
+    text-align: center; /* Center-align the pictures within the container */
+}
+
+.vehicles {
+    display: flex;
+    flex-direction: row;
+   }
+
+    
+
+
+        /* Weather */
+
+        #weather {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+            grid-column: 2/12;
+            row-gap: 1rem;
+            margin-top: 1rem;
+            padding-bottom: 1.5rem;
+        }
+        
+        .forecast-card {
+            margin: auto;
+            width: 12rem;
+            grid-column: auto;
+        }
+
+        .home span {
+            display: flex;
+            }
+.contact-container {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "title title"
+        "contact-us form-container"
+        "contact-us form-container"
+        "map map";
+    }
+    .home img{
+        width: 90%;
+        height: auto;
+        margin: 30px;
+      
+    }
+
+              
+}

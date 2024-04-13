@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tense Fuchs - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Samuel Rios-Lazo | 
+    Course assignment portal for the WDD 230 class at BYU-Idaho. Links to all the assignments
+    will be gathered here.">
+    <meta name="author" content="Tense Fuchs">
+    <meta property="og:title" content="Tense Fuchs - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1626663082623-daed65c06061?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://tensefuchs.github.io/wdd230/">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class=portrait-image src="images/portrait.webp" alt="Portrait of Samuel Rios-Lazo">
+        <h1>Tense<br>Fuchs</h1>
+    </header>
+    <!--For hamburger menu-->
+    <button id="menu" title="Hamburger button"></button>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/12?lang=eng&id=p27#p27"
+            target="_blank">Scripture</a>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="lesson06/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="lesson06/images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="lesson06/images/hero-large.webp" alt="Beautiful LDS Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>San Juan Puerto Rico Temple</p>
+            </div>
+        </div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul id="activitiesList">
+                <!-- <li><a href="lesson02/design.html">Lesson 2 Design</a></li>
+                <li><a href="lesson02/design-principles.html">Lesson 2 Design Principles</a></li>
+                <li><a href="lesson03/images/screenshot.png">W3 Schools Combinator Exercises</a></li>
+                <li><a href="https://codepen.io/Samuel-R-os-Lazo/pen/JjzyVmd">CodePen Pseudo Elements</a></li>
+                <li><a href="https://codepen.io/Samuel-R-os-Lazo/pen/ZEPJZNd">CodePen Responsive Hamburger</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan for Chamber of Commerce</a></li>
+                <li><a href="https://codepen.io/Samuel-R-os-Lazo/pen/KKEQNYr">CodePen Pseudo Classes</a></li>
+                <li><a href="lesson05/bom.html">Book of Mormon DOM Activity</a></li>
+                <li><a href="lesson03/images/landscape.webp">Optimized Image</a></li>
+                <li><a href="lesson06/responsive-images.html">Responsive Images Activity</a></li>
+                <li><a href="lesson07/lazyload.html">Lazy Loading Activity</a></li>
+                <li><a href="lesson07/bom.html">Local Storage BOM Activity</a></li>
+                <li><a href="lesson08/tablebuild.html">Building Tables Activity</a></li>
+                <li><a href="lesson08/form-start/index.html">Building Forms Activity</a></li>
+                <li><a href="form.html">Building Forms Personal Site</a></li> -->
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Weather</h3>
+            <p>The weather in Frankfurt, Germany</p>
+            <figure id="weather-figure">
+                <img id="weather-icon" src="placeholder" alt="placeholder">
+                <figcaption></figcaption>
+            </figure>
+            <section id="weather-grid">
+                <section>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                </section>
+                <section>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                    <p>Feels like <span id="feels-like2"></span></p></section>
+            </section>
+            
+        </section>
+        <iframe class="map" title="Google Map showing Frankfurt, Germany"
+        src="https://www.google.com/maps/d/embed?mid=1BFpfdfNrM5E9LmD8Kgzk68hwung&hl=en_US&ehbc=2E312F"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightDate">[DATE]</span> | Tense Fuchs | Frankfurt</p>
+        <p id="lastModified"></p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamgurger.js"></script>
+    <script src="scripts/numVisits.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

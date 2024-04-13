@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots ~ Homepage</title>
+    <meta name="description" content="Scoots motor scooter rental company">
+    <meta name="author" content="Tense Fuchs">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="images/scootsfavicon.ico">
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tensefuchs.github.io/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://tensefuchs.github.io/finalproject/index.html">
+
+
+</head>
+<body>
+    <span id="banner"></span>
+
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Scoots Logo" width="100" height="100" loading="lazy">
+        <h1>Scoots Motor Scooter Rental Company</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="mode">
+                🕶️
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/index.html">Home</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/rentals.html">Rentals</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/reservations.html">Reservations</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/contact.html">Contact Us</a></li>
+           </ul>
+        </nav>
+        <section class="home">
+            <div class="slide-card">
+            <div class="hero-message">
+                <h5 id="message">Rent Your Scooter Today</h5>
+                <button id="hero-button" type="button" name="hero-button" onclick="window.location.href = 'reservations.html'"><b>Click Here</b></button>  
+            </div>
+            </div>
+            <section>
+                <div class="info">
+                    <h3 class="subtitle">About Scoots</h3>
+                    <p>Welcome to Scoots, your gateway to adventure on the captivating 
+                        island of Cozumel! Picture yourself cruising along scenic roads 
+                        with the wind in your hair, exploring crystal-clear waters and 
+                        palm-fringed beaches on one of our sleek motor scooters, ATVs, 
+                        or rugged jeeps. Conveniently located near the Playa del 
+                        Carmen-Cozumel Ferry dock and the Terminal Puerta Maya, our 
+                        rental locations are strategically positioned for easy access, 
+                        whether you're a local in need of convenient transportation or a 
+                        visitor eager to explore the island's wonders.
+                        <br><br>
+                        At Scoots, we're not just about providing transportation; we're 
+                        about creating unforgettable experiences. Our user-friendly 
+                        website is your go-to destination for all things Scoots, offering
+                         information on our services, rental process, and island 
+                         exploration tips.
+                        <br><br>
+                        But what sets us apart is our commitment to helping you forge 
+                        your own path. While others may stick to the tourist traps, 
+                        we encourage you to venture beyond, discovering the hidden gems 
+                        that await along Cozumel's southern and eastern shores.
+                        <br><br>
+                        So why wait? Embark on the ride of a lifetime with Scoots and 
+                        make memories that will last a lifetime. Whether you're planning 
+                        ahead or seizing the moment, let us be your partner in adventure 
+                        on the stunning island of Cozumel!</p>
+
+
+                </div>
+            </section>    
+            <h2>Our Vehicles</h2>
+            <div class="vehicles">
+                <picture>
+                    <source srcset="images/atv.webp" media="(max-width: 600px)">
+                    <source srcset="images/atv.webp" media="(max-width: 2000px)">
+                    <img id="atv-image" src="images/atv.webp" alt="atv" loading="lazy" width="690" height="300">
+                </picture>  
+                <picture>
+                    <source srcset="images/jeep.webp" media="(max-width: 600px)">
+                    <source srcset="images/jeep.webp" media="(max-width: 2000px)">
+                    <img id="jeep1-image" src="images/jeep.webp" alt="jeep" loading="lazy" width="690" height="300">
+                </picture>  
+                <picture>
+                    <source srcset="images/scooter.webp" media="(max-width: 600px)">
+                    <source srcset="images/scooter.webp" media="(max-width: 2000px)">
+                    <img id="scooter-image" src="images/scooter.webp" alt="scooter" loading="lazy" width="690" height="300">
+                </picture>  
+            </div>
+            <div class="form-cont">
+            <div class="button">
+                <button class="submit" type="submit" onclick="window.location.href = 'rentals.html'">VIEW AVAILABLE VEHICLES</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <h2>Weather</h2>
+            <div id="weather"></div>
+        </div>
+        <div class="contact-container">
+
+			<div class="title">
+			</div>
+			<div class="pic-container">
+                <picture>
+                    <source srcset="images/jeepcoz.webp" media="(max-width: 600px)">
+                    <source srcset="images/jeepcoz.webp" media="(max-width: 2000px)">
+                    <img id="jeep-image" src="images/jeepcoz.webp" alt="yellow jeep" loading="lazy" width="690" height="300">
+                </picture>
+                <p>"Renting a jeep from Scoots and exploring Cozumel was an absolute blast! 
+                    From the moment we hopped into our jeep, the adventure 
+                    began. Driving along the scenic coastal roads, with the salty 
+                    breeze kissing our faces, was an exhilarating experience. Whether it was cruising 
+                    through vibrant towns or venturing off the beaten path to find secluded 
+                    beaches, the thrill of exploration never ceased. The flexibility of having 
+                    our own vehicle made it easy to hop out and immerse ourselves in the 
+                    island's culture, sampling local cuisine and chatting with friendly 
+                    locals along the way. Plus, the rugged terrain capabilities of the jeep 
+                    added an extra element of excitement to our journey. Overall, renting a 
+                    jeep in from was the highlight of our trip, offering an unforgettable 
+                    adventure filled with endless possibilities and unforgettable memories."
+                <br>
+                    -Satisfied Customer
+            </p> 
+			</div>
+			<section class="contact-us">
+				<div class="contact-info">
+					<h3 class="subtitle">Our Locations</h3><br>
+					<h4>El Centro Cozumel Location:</h4>
+						<p>123 Port St, Playa del Carmen<br>
+						Cozumel, Mexico<br>
+                        +49 (987) 555-5678</p>
+                        <br>
+					<h4>Near Puerta Maya Terminal Location:</h4>
+						<p>1234 Ocean Ave, Puerta Maya<br>
+						Cozumel, Mexico<br>
+                        +49 (987) 555-9012</p>
+                    <picture>
+                        <source srcset="images/scooters.webp" media="(max-width: 600px)">
+                        <source srcset="images/scooters.webp" media="(max-width: 2000px)">
+                        <img id="hero-scooters" src="images/scooters.webp" alt="Scooters at Shop" loading="lazy" width="690" height="300">
+                    </picture>
+
+				</div>
+
+
+			</section>
+
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Scoots Motor Scooter Rental Company &copy; <span id="current-year"></span></p>
+        <p class="footer-box">
+        <p>Follow Scoots on</p>     
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div> 
+        <p class="last-update">Last updated: <span id="current-date"></span></p>
+        <p>Tense Fuchs</p>
+    </footer>
+    
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/currentyear.js"></script>
+</body>
+</html>

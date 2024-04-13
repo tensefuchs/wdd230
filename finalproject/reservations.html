@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots ~ Reservations</title>
+    <meta name="description" content="Scoots motor scooter rental company">
+    <meta name="author" content="Tense Fuchs">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="images/scootsfavicon.ico">
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tensefuchs.github.io/wdd230/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://tensefuchs.github.io/wdd230/finalproject/index.html">
+
+
+</head>
+<body>
+    <span id="banner"></span>
+
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Scoots Logo" width="100" height="100" loading="lazy">
+        <h1>Scoots Motor Scooter Rental Company</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="mode">
+                🕶️
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/index.html">Home</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/rentals.html">Rentals</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/reservations.html">Reservations</a></li>
+                <li><a href="https://tensefuchs.github.io/wdd230/finalproject/contact.html">Contact Us</a></li>
+           </ul>
+        </nav>
+        <section class="home">
+            <br><h2>Make Your Reservation Now</h2>
+    
+            <section class="contact-container">
+
+                <div class="agreements">
+                    <h2>Rental Services and Agreements</h2>
+                    <h3>Follow the rules and have fun on your scooter adventure. </h3>
+                    <ul>
+                        <li class="agree">A $50 security deposit is required to confirm reservations.</li>
+                        <li class="agree">A valid drivers license is required in hand at the time of rental.</li>
+                        <li class="agree">No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li class="agree">Fuel charge is not included.</li>
+                        <li class="agree">Unlimited mileage.</li>
+                        <li class="agree">Liability insurance is included.</li>
+                        <li class="agree">Damage insurance is available for purchase.</li>
+                        <li class="agree">Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li class="agree">Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li class="agree">Rentals may be returned to either physical location.</li>
+                    </ul>
+                </div>
+            <div class="form-cont">
+                <form class="form" action="thankyou.html" method="get" target="_blank">
+                    <div id="error-message"></div>
+
+                        <h3>Personal Information</h3>	
+                        <br>			
+
+                    <label>Full Name
+                        <input type="text" name="full-name" id="full-name" pattern="[A-Za-z\- ]{7,15}"
+                            placeholder="enter your full name" required>
+                    </label>
+
+                    <label>Home State/Country
+                        <input type="text" name="state" id="state" pattern="[A-Za-z\- ]{3,15}" placeholder="USA" required>
+                    </label>
+
+                    <label>Phone Number
+                        <input type="tel" name="mobileNumber" id="mobile" placeholder= "+1 555 345 6789" required>
+                    </label>
+
+                    <label>Email
+                        <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$"
+                            title="Please, enter a valid email address" placeholder="email@gmail.com" required>
+                    </label>
+
+                    <h3>Date and Period</h3>
+                    
+                    <label>Date from
+                        <input type="date" name="date" id="date" title="only accept date format" required>
+                    </label>
+
+                    <label>Date to
+                        <input type="date" name="date-to" id="date-to" title="only accept date format"
+                            required>
+                    </label>
+
+                    <h3>Rent type</h3>
+
+                    <label>vehicles
+                        <input type="text" name="type" id="type" list="lvl" placeholder="select your level" required>
+                    </label>
+                    <datalist id="lvl">
+                        <option>Honda Metropolitan (49cc) - 1 Person</option>
+                        <option>Honda Dio (110cc) - 2 Person</option>
+                        <option>Honda PCX150 (149cc) - 2 Person</option>
+                        <option>Honda Pionner 1000 - 4 Person</option>
+                        <option>Jeep Wrangler 4 door with A/C - manual - 5 Person</option>
+                        <option>Jeep Wrangler 2 door - open air - manual - 4 Person</option>
+                    </datalist>
+
+                    <label>Rent Number of Vehicle
+                        <input type="number" name="vehiclenumber" id="vehiclenumber" placeholder="select the number of vehicles" required>
+                    </label>
+
+                    <label>Cruise Line (if applicable)
+                        <input type="text" name="cruiseline" id="cruiseline" placeholder="Cruise Line">
+                    </label>
+
+                    <label>Special Accommodations/Comments/Drop-Off Requests
+                        <textarea name="description" id="description" cols="50" rows="10"></textarea>
+                    </label>
+
+                    <input type="hidden" name="dtime" id="dtime" value="">
+
+                    <div class="buttons">
+                        <button type="submit">COMPLETE RESERVATION</button>
+                    </div>
+                </form>
+                </div>
+            </section>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <p>Scoots Motor Scooter Rental Company &copy; <span id="current-year"></span></p>
+        <p class="footer-box">
+        <p>Follow Scoots on</p>     
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div> 
+        <p class="last-update">Last updated: <span id="current-date"></span></p>
+        <p>Tense Fuchs</p>
+    </footer>
+    
+=   <script src="scripts/weather.js"></script>
+    <script src="scripts/currentyear.js"></script>
+</body>
+</html>
